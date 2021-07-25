@@ -11,6 +11,7 @@
     "node": true
   },
   "rules": {
+      "no-debugger":"warn",
       "semi": 1,
       "indent": ["warn", 2]
   }

@@ -44,3 +44,27 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 ## Contact Information
 
 _Cat Denton <willwdenton@gmail.com>_
+
+Planning:
+
+Sci-fi, Cyberpunk-style
+
+Player generated character
+properties:
+name
+level (we can use this to modify strength of randomly generated badguys)
+stats bar:
+  * Strength
+  * Body
+  * Mind
+  * Speed
+  * Cyber
+  * Hit Points
+
+equipment (maybe modifies stats?)
+
+randomly generated bad guys??
+stats
+  * damage
+  * hit points
+
