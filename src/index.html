@@ -3,38 +3,49 @@
 <head>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <!-- <script type="text/javascript" src="plant.js"></script> -->
+  <!-- <script type="number/javascript" src="plant.js"></script> -->
   <title>Cyber killers from cyberspace</title>
 </head>
 
 <body>
   <div class="container">
     <form id="stats-form">
-
+      <h4>Input your character's name.</h4>
+      <label for="name-input">Your character's name:</label>
+      <input type="text" id="name-input">
+      <br>
+      <h4>Input your character's stats. They must total 25.</h4>
       <label for="strength-input">Strength</label>
-      <input type="text" id="strength-input">
+      <input type="number" id="strength-input" min="1" max="10" step="1" value="5">
       <br>
       <label for="body-input">Body</label>
-      <input type="text" id="body-input">
+      <input type="number" id="body-input" min="1" max="10" step="1" value="5">
       <br>
       <label for="mind-input">Mind</label>
-      <input type="text" id="mind-input">
+      <input type="number" id="mind-input" min="1" max="10" step="1" value="5">
       <br>
       <label for="speed-input">Speed</label>
-      <input type="text" id="speed-input">
+      <input type="number" id="speed-input" min="1" max="10" step="1" value="5">
       <br>
       <label for="cyber-input">Cyber</label>
-      <input type="text" id="cyber-input">
+      <input type="number" id="cyber-input" min="1" max="10" step="1" value="5">
       <br>
       <button type="submit" class="btn-success">Set Stats</button>
     </form>
 
+    <div id="stats-warn">
+      <h2>Your stats bar must total 25 points!</h2>
+    </div>
+
     <div class="stat-block">
+      <h3><span id="name"></span></h3>
       <p><span id="strength"></span></p>
       <p><span id="body"></span></p>
       <p><span id="mind"></span></p>
       <p><span id="speed"></span></p>
       <p><span id="cyber"></span></p>
+      <p><span id="hit-points"></span></p>
+
     </div>
   </div>
 </body>
