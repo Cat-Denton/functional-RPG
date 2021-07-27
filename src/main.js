@@ -4,28 +4,27 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 
 import stateControl from "./js/stateControl.js";
-import setStrength from './js/factoryFunctions.js';
+import {setStrength, setBody, setMind, setSpeed, setCyber} from './js/factoryFunctions.js';
 
-// setBody, setMind, setSpeed, setCyber 
+ 
 
 $(document).ready(function() {  
-  $('#set-strength').click(function(event) {
+  $('#stats-form').submit(function(event) {
     
-    const newState = stateControl (setStrength);
-    debugger;
-    $('#strength').text(`Strength: ${newState.strength}`);
+    const newStateStrength = stateControl (setStrength(parseInt($('#strength-input').val())));
+    $('#strength').text(`Strength: ${newStateStrength.Strength}`);
 
-    // const newState = stateControl(setBody(6));
-    // $('#body').text(`Body: ${newState.body}`);
+    const newStateBody = stateControl(setBody(parseInt($('#body-input').val())));
+    $('#body').text(`Body: ${newStateBody.Body}`);
 
-    // const newState = stateControl(setMind(6));
-    // $('#mind').text(`Mind: ${newState.mind}`);
+    const newStateMind = stateControl(setMind(parseInt($('#mind-input').val())));
+    $('#mind').text(`Mind: ${newStateMind.Mind}`);
 
-    // const newState = stateControl(setSpeed(6));
-    // $('#speed').text(`Speed: ${newState.speed}`);
+    const newStateSpeed = stateControl(setSpeed(parseInt($('#speed-input').val())));
+    $('#speed').text(`Speed: ${newStateSpeed.Speed}`);
 
-    // const newState = stateControl(setCyber(6));
-    // $('#cyber').text(`Cyber: ${newState.cyber}`);
+    const newStateCyber = stateControl(setCyber(parseInt($('#cyber-input').val())));
+    $('#cyber').text(`Cyber: ${newStateCyber.Cyber}`);
     event.preventDefault();
   });
 });

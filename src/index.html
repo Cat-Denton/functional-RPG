@@ -1,17 +1,42 @@
 <html>
-  <head>
-    <script
-    src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-    crossorigin="anonymous"></script>
-    <!-- <script type="text/javascript" src="plant.js"></script> -->
-    <title>Cyber killers from cyberspace</title>
-  </head>
-  <body>
-    <div class="container">
-        <button class="btn-success" id="set-strength">Set strength</button>
-        <p><span id="strength"></span></p>
+
+<head>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <!-- <script type="text/javascript" src="plant.js"></script> -->
+  <title>Cyber killers from cyberspace</title>
+</head>
+
+<body>
+  <div class="container">
+    <form id="stats-form">
+
+      <label for="strength-input">Strength</label>
+      <input type="text" id="strength-input">
+      <br>
+      <label for="body-input">Body</label>
+      <input type="text" id="body-input">
+      <br>
+      <label for="mind-input">Mind</label>
+      <input type="text" id="mind-input">
+      <br>
+      <label for="speed-input">Speed</label>
+      <input type="text" id="speed-input">
+      <br>
+      <label for="cyber-input">Cyber</label>
+      <input type="text" id="cyber-input">
+      <br>
+      <button type="submit" class="btn-success">Set Stats</button>
+    </form>
+
+    <div class="stat-block">
+      <p><span id="strength"></span></p>
+      <p><span id="body"></span></p>
+      <p><span id="mind"></span></p>
+      <p><span id="speed"></span></p>
+      <p><span id="cyber"></span></p>
     </div>
-    <h3></h3>
-  </body>
+  </div>
+</body>
+
 </html>
