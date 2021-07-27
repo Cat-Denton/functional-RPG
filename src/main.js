@@ -20,28 +20,29 @@ $(document).ready(function() {
 
     if(statsSum === 25)
     {
-      const newStateStrength = stateControl (setStrength(strength));
-      $('#strength').text(`Strength: ${newStateStrength.Strength}`);
-  
-      const newStateBody = stateControl(setBody(body));
-      $('#body').text(`Body: ${newStateBody.Body}`);
-  
-      const newStateMind = stateControl(setMind(mind));
-      $('#mind').text(`Mind: ${newStateMind.Mind}`);
-  
-      const newStateSpeed = stateControl(setSpeed(speed));
-      $('#speed').text(`Speed: ${newStateSpeed.Speed}`);
-  
-      const newStateCyber = stateControl(setCyber(cyber));
-      $('#cyber').text(`Cyber: ${newStateCyber.Cyber}`);
-
-      const newStateName = stateControl(setName(name));
-      $('#name').text(`Name: ${newStateName.Name}`);
-
+      stateControl(setStrength(strength));
+      stateControl(setBody(body));
+      stateControl(setMind(mind));
+      stateControl(setSpeed(speed));
+      stateControl(setCyber(cyber));
+      stateControl(setName(name));
       const hitPoints = body + Math.trunc(0.5*strength) + Math.trunc(0.5*cyber)
+      stateControl(setHp(hitPoints));
+      const newState = stateControl();
 
-      const newStateHP = stateControl(setHp(hitPoints));
-      $('#hit-points').text(`Hit Points: ${newStateHP.HitPoints}`);
+      $('#strength').text(`Strength: ${newState.Strength}`);
+  
+      $('#body').text(`Body: ${newState.Body}`);
+  
+      $('#mind').text(`Mind: ${newState.Mind}`);
+  
+      $('#speed').text(`Speed: ${newState.Speed}`);
+  
+      $('#cyber').text(`Cyber: ${newState.Cyber}`);
+
+      $('#name').text(`Name: ${newState.Name.substring(1)}`);
+
+      $('#hit-points').text(`Hit Points: ${newState.HitPoints}`);
 
       $('#stats-warn').hide();
       $('#stats-form').hide();
