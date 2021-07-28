@@ -63,8 +63,15 @@ stats bar:
 
 equipment (maybe modifies stats?)
 
-randomly generated bad guys??
+randomly generated bad guys
 stats
   * damage
   * hit points
 
+have the character and bad guy fight
+
+character does damage -> reduces bad guy hit points
+
+bad guy does damage -> reduces character current hit points
+
+whoever reaches zero first dies

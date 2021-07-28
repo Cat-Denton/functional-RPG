@@ -6,3 +6,7 @@ body {
   display: none;
   color: red;
 }
+
+#stat-block {
+  display: none;
+}
