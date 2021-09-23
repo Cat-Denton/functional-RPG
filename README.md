@@ -1,8 +1,8 @@
-# _Title_
+# _Cyperpunks from Cyberspace_
 
-#### _Short Description_
+#### _A simple RPG coded in functional Javascript_
 
-#### By _**Cat Denton**_
+#### By _**Cat Denton**_, _**Sofia Acosta**_, _**Shanen Cross**_
 
 ## Technologies Used
 
@@ -16,7 +16,7 @@
 
 ## Description
 
-_long description_
+_A simple functional Javascript program. Currently it allows the user to create a character, then "battle" a bad guy NPC by clicking a button that removes hit points from that bad guy. Very WiP_
 
 ## Setup/Installation Requirements
 
@@ -31,7 +31,7 @@ _long description_
 
 ## License
 
-Copyright <YEAR> Cat Denton
+Copyright 2021 Cat Denton, Sofia Acosta, Shanen Cross
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
