@@ -9,4 +9,22 @@ body {
 
 #stat-block {
   display: none;
+  float:left;
+  margin: auto;
+}
+
+#bad-guy-stat-block {
+  display: none;
+  float: right;
+  margin: auto;
+}
+
+#combat {
+  display: none;
+  margin:auto;
+}
+
+.centered {
+  text-align: center;
+  margin: auto;
 }

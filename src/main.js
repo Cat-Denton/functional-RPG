@@ -7,6 +7,14 @@ import stateControl from "./js/stateControl.js";
 import { setStrength, setBody, setMind, setSpeed, setCyber, setMaxHp, setCurrentHp, setName, setInit, setMelee, setRanged, setHacking, setFastTalk } from './js/characterFunctions.js';
 import { setBgHp, setBgDamage, setBgInitiative } from './js/badGuyFunctions.js';
 
+$("body").on("click", "#ranged", function(){
+  const currentState = stateControl();
+  const bgHpLoss = 0-currentState.Ranged;
+  const newState = stateControl(setBgHp(bgHpLoss))
+  
+  $('#bad-guy-hit-points').text(`Hit points: ${newState.BadGuyHitPoints}`);
+});
+
 $(document).ready(function () {
   $('#stats-form').submit(function (event) {
 
@@ -65,6 +73,7 @@ $(document).ready(function () {
       $('#bad-guy-initiative').text(`Initiative: ${newState.BadGuyInitiative}`);
   
       $('#bad-guy-stat-block').show();
+      $('#combat').show();
       $('#stat-block').show();
       $('#stats-warn').hide();
       $('#stats-form').hide();
@@ -72,8 +81,8 @@ $(document).ready(function () {
     } else {
       $('#stats-warn').show();
       event.preventDefault();
-    }
-
+    }    
   });
+  
 });
 
