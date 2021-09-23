@@ -2,7 +2,7 @@
 
 #### _A simple RPG coded in functional Javascript_
 
-#### By _**Cat Denton**_, _**Sofia Acosta**_, _**Shanen Cross**_
+#### By _**Cat Denton**_ and _**Sofia Acosta**_
 
 ## Technologies Used
 
@@ -43,7 +43,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ## Contact Information
 
-_Cat Denton <willwdenton@gmail.com>_
+_Cat Denton <cat.denton.dev@gmail.com>_ _Sofia Acosta <sofiaacostarascon@gmail.com>_
 
 Planning:
 
